@@ -251,3 +251,47 @@ body{
     transform: scale(0.95);
 }
 
+.col-1-of-4{
+    float:left;
+    width: 25%;
+    padding: 2rem;
+
+}
+
+.features{
+    padding: 8rem 0;
+    height: 75vh;
+    background-image: linear-gradient(to right bottom, var(--light-color),
+    var(--dark-color)), url("../img/pexels-philippe-donn-1169754.jpg");
+    background-size: cover;
+    background-position: bottom;
+    transform: skewY(-7deg);
+    margin-top: -7rem;
+}
+
+.features > *{
+    transform: skewY(7deg);
+}
+
+.feature-box{
+    background-color: rgba(255, 255, 255, 0.8);
+    height: 35vh;
+    font-size: 1rem;
+    padding: 1.5rem;
+    text-align: center;
+    color: var(--dark-color);
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s;
+}
+
+.features-box i{
+    font-size: 3rem;
+    background-image: linear-gradient(to right,var(--light-color), var(--dark-color));
+    background-clip: text;
+    color: transparent;
+}
+
+.feature-box:hover{
+    transform: translateY(-1.5rem) scale(1.03);
+}
